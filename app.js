@@ -134,7 +134,7 @@ app.put("/api/comments/:id", (request, response) => {
   const comment = db.comments.find((comment) => {
     return comment.id === commentid;
   });
-  
+
   if (comment) {
     Object.assign(comment, request.body);
     response.status(204).send();
@@ -143,4 +143,4 @@ app.put("/api/comments/:id", (request, response) => {
   }
 });
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
