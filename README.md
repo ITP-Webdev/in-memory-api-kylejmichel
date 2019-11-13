@@ -1,7 +1,1 @@
-To start:
-
-```
-nodemon app.js
-# or
-pm2 start app.js --watch
-```
+Heroku: https://assignment8-kylejmichel.herokuapp.com/
